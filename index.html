@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="images/website/icons/fav.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فیلمورا</title>
+    <!-- refrence to font awesome icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- refrence to google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- refrence to css styles -->
+    <link rel="stylesheet" href="Styles/styles.css" />
+</head>
+
+<body>
+    <!-- Website Header -->
+    <header>
+        <!-- Menu -->
+        <nav class="Navbar">
+            <ul class="LogoUl align-center">
+                <li><a href="index.html" class="align-center"><img class="Logo" src="images/website/icons/logo.png"
+                            alt="Website logo">
+                        <span class="en LogoText">Filmora</span></a></li>
+                <li class="align-center"><a href="#" class="UserBtn">حساب کاربری <i class="fa fa-user-o"></i></a></li>
+            </ul>
+            <ul class="MenuBarUl align-center">
+                <li><span class="MenuBarItem MenuSearchBtn"><i class="fa fa-search"></i> جستجو</span></li>
+                <li><a href="news.html" class="MenuBarItem">خبرنامه</a></li>
+                <li><a href="MoviesList.html" class="MenuBarItem">فیلم و سریال</a></li>
+                <li><a href="index.html" class="MenuBarItem ActiveItem">صفحه اصلی</a></li>
+            </ul>
+            <form name="SearchForm" class="SearchForm align-center rtl">
+                <input type="text" placeholder="هرچیزی که می‌خوای رو اینجا بنویس">
+                <button name="SearchBtn" class="SearchBtn"><i class="fa fa-arrow-left"></i></button>
+            </form>
+        </nav>
+        <!-- Header cover  -->
+        <div class="HeaderCover align-center">
+            <h3 class="HeaderCoverTitle ">برای مشاهده آرشیو کامل <span class="c-main">فیلمورا</span> بر روی دکمه زیر
+                کلیک کنید</h3>
+            <a href="#" class="align-center HeaderCoverBtn"> <span>مشاهده آرشیو </span> </a>
+        </div>
+    </header>
+    <main>
+        <!-- Latest news slider -->
+        <section class="NewsSlider">
+            <section class="SliderItems">
+                <div class="NewsInactiveSlider NewsSliderItem" id="NewsSliderItem1"><img class="NewsSliderImage"
+                        src="images/website/posts/news/mrrobot.jpg" alt="mrrobot">
+                    <!-- this div conatins information about news -->
+                    <div class="NewsSliderContent hide">
+                        <h3 class="NewsSliderTitle rtl">فیلم five feet apart تاخیر خورد!</h3>
+                        <p class="NewsSliderText rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده
+                            از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                            برای شرایط فعلی تکنولوژی مورد نیاز...</p>
+                        <div>
+                            <a href="news.html" class="NewsSliderBtn">مشاهده خبر</a>
+                            <h6 class="NewsSliderDate">یکشنبه ۲۲ شهریور ۱۳۹۹</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="NewsActiveSlider NewsSliderItem" id="NewsSliderItem2"><img class="NewsSliderImage"
+                        src="images/website/posts/news/ffa.jpg" alt="five feet apart">
+                    <!-- this div conatins information about news -->
+                    <div class="NewsSliderContent">
+                        <h3 class="NewsSliderTitle rtl">فیلم five feet apart تاخیر خورد!</h3>
+                        <p class="NewsSliderText rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده
+                            از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                            برای شرایط فعلی تکنولوژی مورد نیاز...</p>
+                        <div>
+                            <a href="news.html" class="NewsSliderBtn">مشاهده خبر</a>
+                            <h6 class="NewsSliderDate">یکشنبه ۲۲ شهریور ۱۳۹۹</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="NewsInactiveSlider NewsSliderItem" id="NewsSliderItem3"><img class="NewsSliderImage"
+                        src="images/website/posts/news/prison-break.jpg" alt="prison break">
+                    <!-- this div conatins information about news -->
+                    <div class="NewsSliderContent hide">
+                        <h3 class="NewsSliderTitle rtl">فیلم five feet apart تاخیر خورد!</h3>
+                        <p class="NewsSliderText rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده
+                            از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                            برای شرایط فعلی تکنولوژی مورد نیاز...</p>
+                        <div>
+                            <a href="news.html" class="NewsSliderBtn">مشاهده خبر</a>
+                            <h6 class="NewsSliderDate">یکشنبه ۲۲ شهریور ۱۳۹۹</h6>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Slider arrows -->
+            <div class="NewsSliderArrowsDiv">
+                <i class="NewsSliderArrows c-main fa fa-angle-left" id="LeftArrow"></i>
+                <i class="NewsSliderArrows c-main fa fa-angle-right" id="RightArrow"></i>
+            </div>
+        </section>
+        <!-- This section contains top movies -->
+        <section class="MoviesPageslider">
+            <div class="MoviesPagesliderAction">
+                <a href="#" class="align-center c-main"> <i class="fa fa-long-arrow-left">&nbsp;</i>مشاهده همه</a>
+                <div>
+                    <select name="MPLGenereSelectore" id="MPLGenereSelectore">
+                        <option value="AllGeneres"> همه ژانر ها</option>
+                        <option value="Action"> اکشن</option>
+                        <option value="Comedy"> کمدی</option>
+                        <option value="SienceFiction"> علمی تخیلی</option>
+                        <option value="Horror"> ترسناک </option>
+                        <option value="Historical"> تاریخی </option>
+                        <option value="Drama"> درام</option>
+                    </select>
+                    <h3 class="c-main">بهترین های</h3>
+                </div>
+            </div>
+            <!-- This div conains Top Rated movies and it has 3 slides-->
+            <div class="MoviesPageSliderItems HiddenMoviesPageSlider MoviesPageSliderItemsLeft">
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Left</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="MoviesPageSliderItems">
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="MoviesPageSliderItems HiddenMoviesPageSlider MoviesPageSliderItemsRight">
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Right</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="NewsSliderArrowsDiv MoviesSliderArrows">
+                <i class="NewsSliderArrows c-main fa fa-angle-left" id="LeftArrow"></i>
+                <i class="NewsSliderArrows c-main fa fa-angle-right" id="RightArrow"></i>
+            </div>
+        </section>
+        <!-- This section contains trending content -->
+        <section class="MoviesPageslider">
+            <div class="MoviesPagesliderAction">
+                <a href="#" class="align-center c-main"> <i class="fa fa-long-arrow-left">&nbsp;</i>مشاهده همه</a>
+                <div>
+                    <select name="MPLGenereSelectore" id="MPLGenereSelectore">
+                        <option value="AllGeneres"> همه ژانر ها</option>
+                        <option value="Action"> اکشن</option>
+                        <option value="Comedy"> کمدی</option>
+                        <option value="SienceFiction"> علمی تخیلی</option>
+                        <option value="Horror"> ترسناک </option>
+                        <option value="Historical"> تاریخی </option>
+                        <option value="Drama"> درام</option>
+                    </select>
+                    <h3 class="c-main">ترند شده های</h3>
+                </div>
+            </div>
+            <!-- This div conains Top Rated movies and it has 3 slides-->
+            <div class="MoviesPageSliderItems HiddenMoviesPageSlider MoviesPageSliderItemsLeft">
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Left</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="MoviesPageSliderItems">
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="MoviesPageSliderItems HiddenMoviesPageSlider MoviesPageSliderItemsRight">
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Right</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="NewsSliderArrowsDiv MoviesSliderArrows">
+                <i class="NewsSliderArrows c-main fa fa-angle-left" id="LeftArrow"></i>
+                <i class="NewsSliderArrows c-main fa fa-angle-right" id="RightArrow"></i>
+            </div>
+        </section>
+        <!-- This section contains Updated Series -->
+        <section class="MoviesPageslider">
+            <div class="MoviesPagesliderAction">
+                <a href="#" class="align-center c-main"> <i class="fa fa-long-arrow-left">&nbsp;</i>مشاهده همه</a>
+                <div>
+                    <select name="MPLGenereSelectore" id="MPLGenereSelectore">
+                        <option value="AllGeneres"> همه ژانر ها</option>
+                        <option value="Action"> اکشن</option>
+                        <option value="Comedy"> کمدی</option>
+                        <option value="SienceFiction"> علمی تخیلی</option>
+                        <option value="Horror"> ترسناک </option>
+                        <option value="Historical"> تاریخی </option>
+                        <option value="Drama"> درام</option>
+                    </select>
+                    <h3 class="c-main">سریال های بروز شده</h3>
+                </div>
+            </div>
+            <div class="MoviesPageSliderItems HiddenMoviesPageSlider MoviesPageSliderItemsLeft">
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Left</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="MoviesPageSliderItems">
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="MoviesPageSliderItems HiddenMoviesPageSlider MoviesPageSliderItemsRight">
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Right</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="Movie.html">مشاهده</a> <i
+                                class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="NewsSliderArrowsDiv MoviesSliderArrows">
+                <i class="NewsSliderArrows c-main fa fa-angle-left" id="LeftArrow"></i>
+                <i class="NewsSliderArrows c-main fa fa-angle-right" id="RightArrow"></i>
+            </div>
+        </section>
+        <!-- This section will show latest trailers -->
+        <section class="LatestTrailers ">
+            <h3 class="c-main">آخرین تریلر ها</h3>
+            <div class="Trailers">
+                <div class="TrailerBox align-center">
+                    <div class="TrailerContent align-center">
+                        <i class="fa fa-play-circle PlayTrailerVideoBtn"></i>
+                        <h6 class="rtl">تریلر قسمت ۲م فصل ۳ سریال The Last Kingdum منتشر شد!</h6>
+                        <div><span>زبان انگلیسی</span> <span>جنایی | درام</span></div>
+                    </div>
+                    <img src="Movies/Trailers/the-last-kingdom-s4.jpg" alt="">
+                </div>
+                <div class="TrailerBox align-center">
+                    <div class="TrailerContent align-center">
+                        <i class="fa fa-play-circle PlayTrailerVideoBtn"></i>
+                        <h6 class="rtl">تریلر قسمت نهایی (۱۸) فصل ۱۰(پایانی) Friends منتشر شد!</h6>
+                        <div><span>زبان انگلیسی</span> <span>جنایی | درام</span></div>
+                    </div>
+                    <img src="Movies/Trailers/Friends.jpg" alt="">
+                </div>
+            </div>
+            <div class="Trailers  TrailerSliderLeft">
+                <div class="TrailerBox align-center">
+                    <div class="TrailerContent align-center">
+                        <i class="fa fa-play-circle PlayTrailerVideoBtn"></i>
+                        <h6 class="rtl">تریلر قسمت ۶ فصل ۷ Peaky Blinders منتشر شد!</h6>
+                        <div><span>زبان انگلیسی</span> <span>سیتکام | درام</span></div>
+                    </div>
+                    <img src="Movies/Trailers/peakyblinders.jpg" alt="">
+                </div>
+                <div class="TrailerBox align-center">
+                    <div class="TrailerContent align-center">
+                        <i class="fa fa-play-circle PlayTrailerVideoBtn"></i>
+                        <h6 class="rtl">تریلر فصل پایانی(۸) سریال Game Of Thrones منتشر شد!</h6>
+                        <div><span>زبان انگلیسی</span> <span>جنایی | درام</span></div>
+                    </div>
+                    <img src="Movies/Trailers/got.jpg" alt="">
+                </div>
+            </div>
+            <div class="Trailers  TrailerSliderRight">
+                <div class="TrailerBox align-center">
+                    <div class="TrailerContent align-center">
+                        <i class="fa fa-play-circle PlayTrailerVideoBtn"></i>
+                        <h6 class="rtl">تریلر فیلم Wonder Woman 2018 منتشر شد!</h6>
+                        <div><span>زبان انگلیسی</span> <span>جنایی | درام</span></div>
+                    </div>
+                    <img src="Movies/Trailers/wonderwoman.jpg" alt="">
+                </div>
+                <div class="TrailerBox align-center">
+                    <div class="TrailerContent align-center">
+                        <i class="fa fa-play-circle PlayTrailerVideoBtn"></i>
+                        <h6 class="rtl">تریلر فیلم El Camino منتشر شد</h6>
+                        <div><span>زبان انگلیسی</span> <span>جنایی | درام</span></div>
+                    </div>
+                    <img src="Movies/Trailers/elCamino.jpg" alt="">
+                </div>
+            </div>
+            <div class="TrailersVideos">
+                <i class="fa fa-close CloseTrailerButton"></i>
+                <video class="TrailerVideo" src="Movies/Trailers/trailer.mkv" height="100%" width="100%"
+                    controls></video>
+            </div>
+            <div class="NewsSliderArrowsDiv TrailersSliderArrow">
+                <i class="NewsSliderArrows c-main fa fa-angle-left" id="LeftArrow"></i>
+                <i class="NewsSliderArrows c-main fa fa-angle-right" id="RightArrow"></i>
+            </div>
+        </section>
+        <!-- This section contains most popular content in website -->
+        <section class="SubscribeContainer">
+            <div class="SubscribeDiv">
+                <h2 class="c-main rtl">فیلمورایی شو!</h2>
+                <h3 class="rtl">مزایای عضویت در خبرنامه فیلمورا:</h3>
+                <ul class="rtl">
+                    <li>
+                        <p>دریافت آخرین اخبار دنیای سینما به صورت فوری</p>
+                    </li>
+                    <li>
+                        <p>قابلیت دنبال کردن فیلم و سریال های مختلف و دریافت مطالب مربوط به آن ها</p>
+                    </li>
+                </ul>
+                <form class="SubscribeForm">
+                    <input class="SubscribeFormSubmit" name=" email" type="submit" value="عضویت در خبرنامه">
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <footer class="align-center rtl"><i class="fa fa-copyright">&nbsp;&nbsp;</i>تمام حقوق این وبسایت متعلق به فیلمورا
+        می‌باشد و هرگونه کپی برداری از آن پیگرد
+
+        قانونی دارد </footer>
+    <!-- This section contains Login/SignUp page -->
+    <section class="UserAccountActionContainer rtl">
+        <div>
+            <div class="SwitchAccountActionContainer">
+                <span>ورود</span>
+                <span>ثبت نام</span>
+                <div class="AccountPseudo"></div>
+            </div>
+            <form name="SignUpForm" class="HiddenForm SignUpForm" action="User.html">
+                <input type="email" placeholder="ایمیل">
+                <input type="text" placeholder="نام کاربری">
+                <input type="password" placeholder="رمز عبور">
+                <input type="password" placeholder="تکرار رمز عبور">
+                <input class="AccountFormButton" type="submit" value="ثبت نام">
+            </form>
+            <form name="SignInForm" class="SignInForm" action="User.html">
+                <input type="email" placeholder="نام کاربری یا ایمیل">
+                <input type="password" placeholder="رمز عبور">
+                <a href="#">رمز عبور خود را فراموش کرده اید؟</a>
+                <input class="AccountFormButton" type="submit" value="ورود به حساب">
+            </form>
+
+            <span class="CloseUserActionContainer fa fa-close"></span>
+        </div>
+    </section>
+    <!-- overlay -->
+    <section class="PageOverlay">
+    </section>
+    <!-- refrence to JS files -->
+    <script src="JS/ui.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="images/website/icons/fav.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فیلمورا</title>
+    <!-- refrence to font awesome icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- refrence to google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- refrence to css styles -->
+    <link rel="stylesheet" href="Styles/styles.css" />
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <!-- Menu -->
+        <nav class="Navbar GrayNavbar">
+            <ul class="LogoUl align-center">
+                <li><a href="index.html" class="align-center"><img class="Logo" src="images/website/icons/logo.png"
+                            alt="Website logo">
+                        <span class="en LogoText">Filmora</span></a></li>
+                <li class="align-center"><a href="#" class="UserBtn">حساب کاربری <i class="fa fa-user-o"></i></a></li>
+            </ul>
+            <ul class="MenuBarUl align-center">
+                <li><span class="MenuBarItem MenuSearchBtn"><i class="fa fa-search"></i> جستجو</span></li>
+                <li><a href="news.html" class="MenuBarItem">خبرنامه</a></li>
+                <li><a href="MoviesList.html" class="MenuBarItem">فیلم و سریال</a></li>
+                <li><a href="index.html" class="MenuBarItem ">صفحه اصلی</a></li>
+            </ul>
+            <form name="SearchForm" class="SearchForm align-center rtl">
+                <input type="text" placeholder="هرچیزی که می‌خوای رو اینجا بنویس">
+                <button name="SearchBtn" class="SearchBtn"><i class="fa fa-arrow-left"></i></button>
+            </form>
+        </nav>
+        <!-- this  sections conatins some details about movie -->
+        <section class="MovieDetailsContainer">
+            <div class="MovieDetailsDiv">
+                <!-- This div contains movie ratings from popular websites and also from filmora users -->
+                <div class="MovieRatings">
+                    <h1 class="c-main">نمرات</h1>
+                    <h2>IMDB</h2>
+                    <h4>10</h4>
+                    <h2>Metacritic</h2>
+                    <h4>100</h4>
+                    <h2>Rotten Tomatoes</h2>
+                    <h4>100</h4>
+                    <h2>Filmora</h2>
+                    <h4>10</h4>
+                    <span class="c-gray">بر اساس 317،524 نظر</span>
+                </div>
+                <!-- This div contains usefull information about this movie -->
+                <div class="MovieInfoContainer rtl">
+                    <h1 class="c-white ">سریال Friends</h1>
+                    <h4><span class="c-white">ژانر: </span>&nbsp;<span class="c-gray">سیتکام | کمدی</span></h4>
+                    <h4><span class="c-white">وضعیت: </span>&nbsp;<span class="c-gray">تمام شده</span></h4>
+                    <h4><span class="c-white">مدت زمان هر قسمت:</span>&nbsp;<span class="c-gray">حدودا 23 دقیقه</span>
+                    </h4>
+                    <h4><span class="c-white">کارگردان:</span>&nbsp;<span class="c-gray"> James Burrows</span>
+                    </h4>
+                    <h4><span class="c-white">تعداد :</span>&nbsp;<span class="c-gray">10 فصل | 236 قسمت</span></h4>
+                    <h4><span class="c-white">کشور:</span>&nbsp;<span class="c-gray">آمریکا</span></h4>
+                    <h4><span class="c-white">زبان:</span>&nbsp;<span class="c-gray">انگلیسی</span></h4>
+                    <h4><span class="c-white">سال ساخت:</span>&nbsp;<span class="c-gray">1994 - 2004</span></h4>
+                    <div class="MovieGalleryContainer">
+                        <a href="#" class="align-center OpenGalleryBtn"> گالری&nbsp;<span
+                                class="fa fa-photo"></span></a>
+                        <a href="#" class="align-center ShowTrailerBtn"> تریلر&nbsp;<span class="fa fa-play"></span></a>
+                    </div>
+                    <!-- This div contains 10 stars, users can drop theire rating between 1 to 10 for this movie with hovering over this stars  -->
+                    <div class="RatingStarContainer align-center">
+                        <span class="c-white">به این سریال امتیاز بدید:</span>
+                        <i class="fa fa-star c-white"></i>
+                        <i class="fa fa-star c-white"></i>
+                        <i class="fa fa-star c-white"></i>
+                        <i class="fa fa-star c-white"></i>
+                        <i class="fa fa-star c-white"></i>
+                        <i class="fa fa-star c-white"></i>
+                        <i class="fa fa-star c-white"></i>
+                        <i class="fa fa-star c-white"></i>
+                        <i class="fa fa-star c-white"></i>
+                        <i class="fa fa-star c-white"></i>
+                    </div>
+                </div>
+                <!-- This div contains movie poster -->
+                <div class="MoviePoster align-center"><img src="images/website/posts/series/Friends-poster.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+    </header>
+    <main>
+        <!-- This section contains movie`s summary -->
+        <section class=" StoryLine rtl">
+            <h3 class="c-main">خلاصه داستان</h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                است. چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال
+                و آینده
+                شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای
+                علی
+                الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام
+                و
+                دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                دستاوردهای
+                اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. لورم ایپسوم متن
+                ساختگی
+                با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف
+                بهبود
+                ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                متخصصان
+                را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و
+                فرهنگ پیشرو
+                در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها
+                و شرایط
+                سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل
+                دنیای
+                موجود طراحی اساسا مورد استفاده قرار گیرد.
+            </p>
+        </section>
+        <!-- This section contains all awards that movie has achieved -->
+        <section class="AwardsContainer rtl">
+            <h3 class="c-main">جوایز</h3>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+            <p class="c-white">بهترین سریال تاریخ</p>
+
+        </section>
+        <!-- This section contains a slider that shows movie cast(actors and actress) -->
+        <section class="MoviesPageslider ActorsContainer  rtl">
+            <h3 class="c-white">بازیگران</h3>
+            <div class="Actors MoviesPageSliderItems HiddenMoviesPageSlider MoviesPageSliderItemsLeft ActorsPos">
+                <div class="ActorBox">
+                    <img src="images/website/Actors/jenniferaniston.jpg" alt="">
+                    <div class="ActorInfo align-center">
+                        <h3>Jennifer Aniston</h3>
+                        <h4>Rachel Green</h4>
+                    </div>
+                </div>
+                <div class="ActorBox">
+                    <img src="images/website/Actors/courtneycox.jpg" alt="">
+                    <div class="ActorInfo align-center">
+                        <h3>Courtney Cox</h3>
+                        <h4>Monica Geller</h4>
+                    </div>
+                </div>
+                <div class="ActorBox">
+                    <img src="images/website/Actors/paulrudd.jpg" alt="">
+                    <div class="ActorInfo align-center">
+                        <h3>Paul Rudd</h3>
+                        <h4>Mike Hannigan</h4>
+                    </div>
+                </div>
+                <div class="ActorBox">
+                    <img src="images/website/Actors/jamesmichaeltyler.jpg" alt="">
+                    <div class="ActorInfo align-center">
+                        <h3>james michael tyler</h3>
+                        <h4>Gunter</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="Actors MoviesPageSliderItems ">
+                <div class="ActorBox">
+                    <img src="images/website/Actors/mattLeBlank.jpg" alt="">
+                    <div class="ActorInfo align-center">
+                        <h3>Matt Le Blank </h3>
+                        <h4>Joey Tribiany</h4>
+                    </div>
+                </div>
+                <div class="ActorBox">
+                    <img src="images/website/Actors/lisaKudrow.jpg" alt="">
+                    <div class="ActorInfo align-center">
+                        <h3>Lisa Kudrow</h3>
+                        <h4>Phoebe Buffay</h4>
+                    </div>
+                </div>
+                <div class="ActorBox">
+                    <img src="images/website/Actors/MatthewPerry.jpg" alt="">
+                    <div class="ActorInfo align-center">
+                        <h3>Matthew Perry</h3>
+                        <h4>Chandle Muriel Bing</h4>
+                    </div>
+                </div>
+                <div class="ActorBox">
+                    <img src="images/website/Actors/davidSchwimmer.jpg" alt="">
+                    <div class="ActorInfo align-center">
+                        <h3>David Schwimmer</h3>
+                        <h4>Ross Geller </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="Actors MoviesPageSliderItems HiddenMoviesPageSlider MoviesPageSliderItemsRight ActorsPos ">
+                <div class="ActorBox">
+                    <img src="images/website/Actors/reesewitherspoon.jpg" alt="">
+                    <div class="ActorInfo align-center">
+                        <h3>Reese Witherspoon</h3>
+                        <h4>Jill Green</h4>
+                    </div>
+                </div>
+                <div class="ActorBox">
+                    <img src="images/website/Actors/christinapickles.jpeg" alt="">
+                    <div class="ActorInfo align-center">
+                        <h3>Christina pickles</h3>
+                        <h4>Juddy Geller</h4>
+                    </div>
+                </div>
+                <div class="ActorBox">
+                    <img src="images/website/Actors/elliottgould.jpg" alt="">
+                    <div class="ActorInfo align-center">
+                        <h3>Elliott Gould</h3>
+                        <h4>Jack Geller</h4>
+                    </div>
+                </div>
+                <div class="ActorBox">
+                    <img src="images/website/Actors/giovanniribisi.jpg" alt="">
+                    <div class="ActorInfo align-center">
+                        <h3>Giovanni Ribisi</h3>
+                        <h4>Frank Buffay</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="NewsSliderArrowsDiv MoviesSliderArrows ltr">
+                <i class="NewsSliderArrows c-main fa fa-angle-left" id="LeftArrow"></i>
+                <i class="NewsSliderArrows c-main fa fa-angle-right" id="RightArrow"></i>
+            </div>
+        </section>
+        <!-- This section contains download links of movie, its quiet diffrent for series-->
+        <section class="DownloadBoxContainer rtl">
+            <h3 class="c-white">لینک های دانلود</h3>
+            <span class="c-gray">برای دانلود قسمت های دلخواه بر روی فصل مورد نظر کلیک کنید</span>
+            <div class="DownloadLinksContainer align-center">
+                <a href="#" class="align-center"> فصل 1 &nbsp;<span>(23 قسمت)</span></a>
+                <a href="#" class="align-center"> فصل 2 &nbsp;<span>(23 قسمت)</span></a>
+                <a href="#" class="align-center"> فصل 3 &nbsp;<span>(23 قسمت)</span></a>
+                <a href="#" class="align-center"> فصل 4 &nbsp;<span>(23 قسمت)</span></a>
+                <a href="#" class="align-center"> فصل 5 &nbsp;<span>(23 قسمت)</span></a>
+                <a href="#" class="align-center"> فصل 6 &nbsp;<span>(23 قسمت)</span></a>
+                <a href="#" class="align-center"> فصل 7 &nbsp;<span>(23 قسمت)</span></a>
+                <a href="#" class="align-center"> فصل 8 &nbsp;<span>(23 قسمت)</span></a>
+                <a href="#" class="align-center"> فصل 9 &nbsp;<span>(23 قسمت)</span></a>
+                <a href="#" class="align-center"> فصل 10 &nbsp;<span>(18 قسمت)</span></a>
+            </div>
+            <section class="SeriesDlLinksConatianer rtl">
+                <span class="fa fa-remove CloseLinksPageBtn"></span>
+                <h4 class="c-white">کیفیت 480P</h4>
+                <div class="SeriesDlLinkBox">
+                    <a href="#" class="align-center"> قسمت 1&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 2&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 3&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 4&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 5&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 6&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 7&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 8&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 9&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 11&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 11&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 12&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 13&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 14&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 15&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 16&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 17&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 18&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 19&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 20&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 21&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 22 &nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 23 &nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center SerieSubtitle">زیرنویس هماهنگ</a>
+                </div>
+                <h4 class="c-white">کیفیت 720P</h4>
+                <div class="SeriesDlLinkBox">
+                    <a href="#" class="align-center"> قسمت 1&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 2&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 3&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 4&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 5&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 6&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 7&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 8&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 9&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 11&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 11&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 12&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 13&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 14&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 15&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 16&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 17&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 18&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 19&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 20&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 21&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 22 &nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center SerieSubtitle">زیرنویس هماهنگ</a>
+                </div>
+                <h4 class="c-white">کیفیت 1080P</h4>
+                <div class="SeriesDlLinkBox">
+                    <a href="#" class="align-center"> قسمت 1&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 2&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 3&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 4&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 5&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 6&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 7&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 8&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 9&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 11&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 11&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 12&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 13&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 14&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 15&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 16&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 17&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 18&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 19&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 20&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 21&nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center"> قسمت 22 &nbsp;<span>(234mb)</span></a>
+                    <a href="#" class="align-center SerieSubtitle">زیرنویس هماهنگ</a>
+                </div>
+            </section>
+        </section>
+        <!-- This section contains a slider that show movies with similar genere to current movie genere -->
+        <section class="MoviesPageslider">
+            <div class="MoviesPagesliderAction">
+                <a href="#" class="align-center c-main"> <i class="fa fa-long-arrow-left">&nbsp;</i>مشاهده همه</a>
+                <div>
+                    <h3 class="c-main">سریال های مشابه</h3>
+                </div>
+            </div>
+            <div class="MoviesPageSliderItems HiddenMoviesPageSlider MoviesPageSliderItemsLeft">
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="#">مشاهده</a> <i class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Left</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="#">مشاهده</a> <i class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                            می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="#">مشاهده</a> <i class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                            می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="#">مشاهده</a> <i class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                            می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="MoviesPageSliderItems">
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="#">مشاهده</a> <i class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                            می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="#">مشاهده</a> <i class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                            می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="#">مشاهده</a> <i class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                            می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="#">مشاهده</a> <i class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                            می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="MoviesPageSliderItems HiddenMoviesPageSlider MoviesPageSliderItemsRight">
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Right</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="#">مشاهده</a> <i class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                            می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="#">مشاهده</a> <i class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                            می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="#">مشاهده</a> <i class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                            می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+                <div class="MoviesBox"><img src="images/website/posts/series/friends.jpg" alt="">
+                    <div class="MoviesContent">
+                        <h4 class="rtl">سریال Friends</h4>
+                        <span class="MoviesContentRating en"><i class="fa fa-star"></i>100%</span>
+                        <div class="MoviesContentGenere"><span>درام | جنایی</span> <span>زبان انگلیسی</span></div>
+                        <div class="MoviesContentAction"><a href="#">مشاهده</a> <i class="fa fa-heart-o LikeButton"></i>
+                        </div>
+                    </div>
+                    <div class="MovieShortStoryContainer rtl">
+                        <p class="MovieShortStory">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم
+                            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                            می
+                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان و...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="NewsSliderArrowsDiv MoviesSliderArrows">
+                <i class="NewsSliderArrows c-main fa fa-angle-left" id="LeftArrow"></i>
+                <i class="NewsSliderArrows c-main fa fa-angle-right" id="RightArrow"></i>
+            </div>
+        </section>
+        </section>
+        <!-- This section contains all comments that posted for this movie -->
+        <section class="CommentsConatiner rtl">
+            <h3 class="c-white"><span class="fa fa-comment c-main">&nbsp;</span>نظرات کاربران</h3>
+            <div class="CommentsSection">
+                <div class="CommentBox">
+                    <img src="images/users/Mrym/avatar.png" alt="">
+                    <div class="CommentAction">
+                        <h4 class="c-white">Mrym</h4>
+                        <p>بهترینننننننننننن سریالی بود که تو عمرم دیده بودم، این سریال رو باید 1000 بار دید</p>
+                        <i class="fa fa-share ReplyToCommentBtn c-main"></i>
+                    </div>
+                    <!-- This form send replies to specific comments -->
+                    <form name="ReplyForm" class="ReplyForm align-center">
+                        <input type="text" placeholder="متن پاسخ خودتون رو وارد کنید">
+                        <button class="SendReplyBtn"><i class="fa fa-chevron-circle-up"></i></button>
+                        <button class="CloseReply"><i class="fa fa-remove"></i></button>
+                    </form>
+                </div>
+                <div class="CommentBox RepliedComment"><img src="images/users/Faridgh/avatar.jpg" alt="">
+                    <div class="CommentAction">
+                        <h4 class="c-white">Farid Ghaderi <span class="c-main">(ادمین)</span></h4>
+                        <p>بهتر ازش نداریم</p>
+                        <i class="fa fa-share ReplyToCommentBtn c-main"></i>
+                    </div>
+                    <!-- This form send replies to specific comments -->
+                    <form name="ReplyForm" class="ReplyForm align-center">
+                        <input type="text" placeholder="متن پاسخ خودتون رو وارد کنید">
+                        <button class="SendReplyBtn"><i class="fa fa-chevron-circle-up"></i></button>
+                        <button class="CloseReply"><i class="fa fa-remove"></i></button>
+                    </form>
+                </div>
+                <div class="CommentBox">
+                    <img src="images/users/AliAlpha/avatar.jpg" alt="">
+                    <div class="CommentAction">
+                        <h4 class="c-white">AliGolchinFard</h4>
+                        <p> سلام، روزتون بخیر، سریال سانسور هست؟</p>
+                        <i class="fa fa-share ReplyToCommentBtn c-main"></i>
+                    </div>
+                    <!-- This form send replies to specific comments -->
+                    <form name="ReplyForm" class="ReplyForm align-center">
+                        <input type="text" placeholder="متن پاسخ خودتون رو وارد کنید">
+                        <button class="SendReplyBtn"><i class="fa fa-chevron-circle-up"></i></button>
+                        <button class="CloseReply"><i class="fa fa-remove"></i></button>
+                    </form>
+                </div>
+                <div class="CommentBox">
+                    <img src="images/users/Mjavad/avatar.png" alt="">
+                    <div class="CommentAction">
+                        <h4 class="c-white">MMDJavad</h4>
+                        <p>چقد فیلم خوبی بود، شاهکار بود واقعا</p>
+                        <i class="fa fa-share ReplyToCommentBtn c-main"></i>
+                    </div>
+                    <!-- This form send replies to specific comments -->
+                    <form name="ReplyForm" class="ReplyForm align-center">
+                        <input type="text" placeholder="متن پاسخ خودتون رو وارد کنید">
+                        <button class="SendReplyBtn"><i class="fa fa-chevron-circle-up"></i></button>
+                        <button class="CloseReply"><i class="fa fa-remove"></i></button>
+                    </form>
+                </div>
+                <div class="CommentBox RepliedComment"><img src="images/users/Faridgh/avatar.jpg" alt="">
+                    <div class="CommentAction">
+                        <h4 class="c-white">Farid Ghaderi <span class="c-main">(ادمین)</span></h4>
+                        <p>سریال بود دوست عزیز :)</p>
+                        <i class="fa fa-share ReplyToCommentBtn c-main"></i>
+                    </div>
+                    <!-- This form send replies to specific comments -->
+                    <form name="ReplyForm" class="ReplyForm align-center">
+                        <input type="text" placeholder="متن پاسخ خودتون رو وارد کنید">
+                        <button class="SendReplyBtn"><i class="fa fa-chevron-circle-up"></i></button>
+                        <button class="CloseReply"><i class="fa fa-remove"></i></button>
+                    </form>
+                </div>
+                <div class="CommentBox">
+                    <img src="images/users/Mohi/avatar.jpg" alt="">
+                    <div class="CommentAction">
+                        <h4 class="c-white">UnknownCoder</h4>
+                        <p>کاش زودتر به حرف دوستم گوش میدادم و این سریال رو نگاه می‌کردم، عاشقش شدم</p>
+                        <i class="fa fa-share ReplyToCommentBtn c-main"></i>
+                    </div>
+                    <!-- This form send replies to specific comments -->
+                    <form name="ReplyForm" class="ReplyForm align-center">
+                        <input type="text" placeholder="متن پاسخ خودتون رو وارد کنید">
+                        <button class="SendReplyBtn"><i class="fa fa-chevron-circle-up"></i></button>
+                        <button class="CloseReply"><i class="fa fa-remove"></i></button>
+                    </form>
+                </div>
+                <div class="CommentBox"><img src="images/users/SinaSn/avatar.jpg" alt="">
+                    <div class="CommentAction">
+                        <h4 class="c-white">SinaSn<span class="c-main"></span></h4>
+                        <p>عالی بود واقعا، لذت بردم </p>
+                        <i class="fa fa-share ReplyToCommentBtn c-main"></i>
+                    </div>
+                    <!-- This form send replies to specific comments -->
+                    <form name="ReplyForm" class="ReplyForm align-center">
+                        <input type="text" placeholder="متن پاسخ خودتون رو وارد کنید">
+                        <button class="SendReplyBtn"><i class="fa fa-chevron-circle-up"></i></button>
+                        <button class="CloseReply"><i class="fa fa-remove"></i></button>
+                    </form>
+                </div>
+                <div class="CommentBox">
+                    <img src="images/users/Delnia/avatar.jpg" alt="">
+                    <div class="CommentAction">
+                        <h4 class="c-white">DelniaGhaderi</h4>
+                        <p>چقدر خوشحالم که به حرف پسرعموم گوش کردم و این سریالو دیدم</p>
+                        <i class="fa fa-share ReplyToCommentBtn c-main"></i>
+                    </div>
+                    <!-- This form send replies to specific comments -->
+                    <form name="ReplyForm" class="ReplyForm align-center">
+                        <input type="text" placeholder="متن پاسخ خودتون رو وارد کنید">
+                        <button class="SendReplyBtn"><i class="fa fa-chevron-circle-up"></i></button>
+                        <button class="CloseReply"><i class="fa fa-remove"></i></button>
+                    </form>
+                </div>
+                <div class="CommentBox">
+                    <img src="images/users/Mozhganino/avatar.jpg" alt="">
+                    <div class="CommentAction">
+                        <h4 class="c-white">Mozhganino</h4>
+                        <p>این از اون سریالاس که ارزش چد بار دیدن رو داره، بی نظیر بود، مرسیییییی فیلموراا</p>
+                        <i class="fa fa-share ReplyToCommentBtn c-main"></i>
+                    </div>
+                    <!-- This form send replies to specific comments -->
+                    <form name="ReplyForm" class="ReplyForm align-center">
+                        <input type="text" placeholder="متن پاسخ خودتون رو وارد کنید">
+                        <button class="SendReplyBtn"><i class="fa fa-chevron-circle-up"></i></button>
+                        <button class="CloseReply"><i class="fa fa-remove"></i></button>
+                    </form>
+                </div>
+                <div class="CommentBox RepliedComment"><img src="images/users/Faridgh/avatar.jpg" alt="">
+                    <div class="CommentAction">
+                        <h4 class="c-white">Farid Ghaderi <span class="c-main">(ادمین)</span></h4>
+                        <p>خواهش می‌کنم مژگانینو</p>
+                        <i class="fa fa-share ReplyToCommentBtn c-main"></i>
+                    </div>
+                    <!-- This form send replies to specific comments -->
+                    <form name="ReplyForm" class="ReplyForm align-center">
+                        <input type="text" placeholder="متن پاسخ خودتون رو وارد کنید">
+                        <button class="SendReplyBtn"><i class="fa fa-chevron-circle-up"></i></button>
+                        <button class="CloseReply"><i class="fa fa-remove"></i></button>
+                    </form>
+                </div>
+                <div class="CommentBox">
+                    <img src="images/users/AZeinali/avatar.jpeg" alt="">
+                    <div class="CommentAction">
+                        <h4 class="c-white">AZeinali</h4>
+                        <p>با اختلاف بهتریننن سریال تاریخ</p>
+                        <i class="fa fa-share ReplyToCommentBtn c-main"></i>
+                    </div>
+                    <!-- This form send replies to specific comments -->
+                    <form name="ReplyForm" class="ReplyForm align-center">
+                        <input type="text" placeholder="متن پاسخ خودتون رو وارد کنید">
+                        <button class="SendReplyBtn"><i class="fa fa-chevron-circle-up"></i></button>
+                        <button class="CloseReply"><i class="fa fa-remove"></i></button>
+                    </form>
+                </div>
+
+            </div>
+            <a href="#" class="ShowMoreCommentsBtn align-center"> مشاهده کامنت های
+                بیشتر &nbsp;&nbsp;<span class="fa fa-arrow-down"></span></a>
+            <div class="PostCommentsSection">
+                <form name="CommentForm" id="CommentForm" class="CommentForm">
+                    <textarea class="CommentMsg" cols="30" rows="10" placeholder="نظر خودتون رو وارد کنید"></textarea>
+                    <input type="submit" id="Submit" value="ارسال نظر">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="align-center rtl"><i class="fa fa-copyright">&nbsp;&nbsp;</i>تمام حقوق این وبسایت متعلق به
+        سریالورا
+        می‌باشد و هرگونه کپی برداری از آن پیگرد
+
+        قانونی دارد </footer>
+    <!-- This div contains trailer video -->
+    <div class="TrailersVideos">
+        <i class="fa fa-close CloseTrailerButton"></i>
+        <video class="TrailerVideo" src="Movies/Trailers/trailer.mkv" height="100%" width="100%" controls></video>
+    </div>
+    <!-- This section contains some images related to movie -->
+    <section class="GalleryContainer">
+        <div class="MainGalleryImageContainer">
+            <img src="Movies/Gallery/img1.jpg" alt="">
+            <a href="#">دانلود کیفیت اصلی </a>
+            <span class="fa fa-close CloseGallery"></span>
+        </div>
+        <div class="SubGalleryImagesContainer">
+            <img src="Movies/Gallery/img2.jpg" alt="">
+            <img src="Movies/Gallery/img3.jpg" alt="">
+            <img src="Movies/Gallery/img4.jpg" alt="">
+            <img src="Movies/Gallery/img5.jpg" alt="">
+            <img src="Movies/Gallery/img6.jpg" alt="">
+            <img src="Movies/Gallery/img7.jpg" alt="">
+        </div>
+    </section>
+    <!-- This section contains Login/SignUp page -->
+    <section class="UserAccountActionContainer rtl">
+        <div>
+            <div class="SwitchAccountActionContainer">
+                <span>ورود</span>
+                <span>ثبت نام</span>
+                <div class="AccountPseudo"></div>
+            </div>
+            <form name="SignUpForm" class="SignUpForm HiddenForm" action="User.html">
+                <input type="email" placeholder="ایمیل">
+                <input type="text" placeholder="نام کاربری">
+                <input type="password" placeholder="رمز عبور">
+                <input type="password" placeholder="تکرار رمز عبور">
+                <input class="AccountFormButton" type="submit" value="ثبت نام">
+            </form>
+            <form name="SignInForm" class="SignInForm " action="User.html">
+                <input type="email" placeholder="نام کاربری یا ایمیل">
+                <input type="password" placeholder="رمز عبور">
+                <a href="#">رمز عبور خود را فراموش کرده اید؟</a>
+                <input class="AccountFormButton" type="submit" value="ورود به حساب">
+            </form>
+
+            <span class="CloseUserActionContainer fa fa-close"></span>
+        </div>
+    </section>
+    <!-- overlay -->
+    <section class="PageOverlay">
+    </section>
+    <!-- Confirm Message -->
+    <div class="CommentConfirmContainer">
+        <p>نظر شما با موفقیت ارسال شد و پس از تایید در وبسایت قرار خواهد گرفت</p>
+    </div>
+    <!-- refrence to JS files -->
+    <script src="JS/ui.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>

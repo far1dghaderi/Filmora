@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="images/website/icons/fav.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فیلمورا</title>
+    <!-- refrence to font awesome icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- refrence to google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- refrence to css styles -->
+    <link rel="stylesheet" href="Styles/styles.css" />
+</head>
+
+<body>
+    <header>
+        <!-- Menu -->
+        <nav class="Navbar GrayNavbar">
+            <ul class="LogoUl align-center">
+                <li><a href="index.html" class="align-center"><img class="Logo" src="images/website/icons/logo.png"
+                            alt="Website logo">
+                        <span class="en LogoText">Filmora</span></a></li>
+                <li class="align-center"><a href="#" class="UserBtn">حساب کاربری <i class="fa fa-user-o"></i></a></li>
+            </ul>
+            <ul class="MenuBarUl align-center">
+                <li><span class="MenuBarItem MenuSearchBtn"><i class="fa fa-search"></i> جستجو</span></li>
+                <li><a href="#" class="MenuBarItem ActiveItem">خبرنامه</a></li>
+                <li><a href="MoviesList.html" class="MenuBarItem">فیلم و سریال</a></li>
+                <li><a href="index.html" class="MenuBarItem ">صفحه اصلی</a></li>
+            </ul>
+            <form name="SearchForm" class="SearchForm align-center rtl">
+                <input type="text" placeholder="هرچیزی که می‌خوای رو اینجا بنویس">
+                <button name="SearchBtn" class="SearchBtn"><i class="fa fa-arrow-left"></i></button>
+            </form>
+        </nav>
+    </header>
+    <!-- This section contains Login/SignUp page -->
+    <section class="UserAccountActionContainer rtl">
+        <div>
+            <div class="SwitchAccountActionContainer">
+                <span>ورود</span>
+                <span>ثبت نام</span>
+                <div class="AccountPseudo"></div>
+            </div>
+            <form name="SignUpForm" class="SignUpForm HiddenForm" action="User.html">
+                <input type="email" placeholder="ایمیل">
+                <input type="text" placeholder="نام کاربری">
+                <input type="password" placeholder="رمز عبور">
+                <input type="password" placeholder="تکرار رمز عبور">
+                <input class="AccountFormButton" type="submit" value="ثبت نام">
+            </form>
+            <form name="SignInForm" class="SignInForm " action="User.html">
+                <input type="email" placeholder="نام کاربری یا ایمیل">
+                <input type="password" placeholder="رمز عبور">
+                <a href="#">رمز عبور خود را فراموش کرده اید؟</a>
+                <input class="AccountFormButton" type="submit" value="ورود به حساب">
+            </form>
+
+            <span class="CloseUserActionContainer fa fa-close"></span>
+        </div>
+    </section>
+    <main style="padding-top: 50px;">
+        <p style="padding-right: 5%;" class="c-white rtl">حال نداشتم این صفحه رو بزنم، بقیه صفحاتو چک کنید، مرسی :)</p>
+    </main>
+    <!-- overlay -->
+    <section class="PageOverlay">
+    </section>
+    <!-- refrence to JS files -->
+    <script src="JS/ui.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>

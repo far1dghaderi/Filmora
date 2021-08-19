@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" href="images/website/icons/fav.ico" type="image/x-icon" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>فیلمورا</title>
+<!-- refrence to font awesome icons -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- refrence to google fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<!-- refrence to css styles -->
+<link rel="stylesheet" href="Styles/styles.css" />
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <!-- Menu -->
+        <nav class="Navbar GrayNavbar">
+            <ul class="LogoUl align-center">
+                <li><a href="index.html" class="align-center"><img class="Logo" src="images/website/icons/logo.png"
+                            alt="Website logo">
+                        <span class="en LogoText">Filmora</span></a></li>
+                <li class="align-center"><a href="#" class="UserBtn">حساب کاربری <i class="fa fa-user-o"></i></a></li>
+            </ul>
+            <ul class="MenuBarUl align-center">
+                <li><span class="MenuBarItem MenuSearchBtn"><i class="fa fa-search"></i> جستجو</span></li>
+                <li><a href="news.html" class="MenuBarItem">خبرنامه</a></li>
+                <li><a href="MoviesList.html" class="MenuBarItem ActiveItem">فیلم و سریال</a></li>
+                <li><a href="index.html" class="MenuBarItem ">صفحه اصلی</a></li>
+            </ul>
+            <form name="SearchForm" class="SearchForm align-center rtl">
+                <input type="text" placeholder="هرچیزی که می‌خوای رو اینجا بنویس">
+                <button name="SearchBtn" class="SearchBtn"><i class="fa fa-arrow-left"></i></button>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <!-- This section contains filter options -->
+        <section class="FilterSection">
+
+            <h3 class="c-main rtl">فیلتر کردن نتایج</h3>
+
+            <form name="FiltereForm">
+                <input type="submit" class="align-center" value="اعمال فیلتر">
+                <input type="text" placeholder="بازیگر">
+                <select name="FilterGenere" class="FilterGenere" class="rtl">
+                    <option value="All"> کشور</option>
+                    <option value="All">آمریکا</option>
+                    <option value="All">انگلستان</option>
+                    <option value="All">ایران</option>
+                    <option value="All">برزیل</option>
+                    <option value="All">کره</option>
+                </select>
+                <select name="FilterGenere" class="FilterGenere" class="rtl">
+                    <option value="All">زبان</option>
+                    <option value="All">فارسی</option>
+                    <option value="All">انگلیسی</option>
+                    <option value="All">عربی</option>
+                    <option value="All">اسپانیایی</option>
+                </select>
+                <select name="FilterGenere" class="FilterGenere" class="rtl">
+                    <option value="All"> دسته بندی</option>
+                    <option value="All"> فیلم</option>
+                    <option value="All"> سریال</option>
+                    <option value="All"> مینی سریال</option>
+                    <option value="All"> مستند</option>
+                    <option value="All"> انیمیشن</option>
+                    <option value="All"> انیمه</option>
+                </select>
+                <select name="FilterGenere" class="FilterGenere" class="rtl">
+                    <option value="All"> ژانر</option>
+                    <option value="All"> درام</option>
+                    <option value="All"> اکشن</option>
+                    <option value="All"> کمدی</option>
+                    <option value="All"> ترسناک</option>
+                    <option value="All"> تاریخی</option>
+                </select>
+            </form>
+        </section>
+        <!-- This section contains movies -->
+        <section class="MoviesSection">
+            <!-- Sort Movies btn -->
+            <div class="SortMoviesDiv rtl">
+                <select name="SortMovies" id="SortMovies" class="rtl">
+                    <option value="SortByDownlaods">مرتب سازی بر اساس</option>
+                    <option value="SortByDownlaods">تعداد دانلود</option>
+                    <option value="SortByRating">امتیاز</option>
+                    <option value="SortByDate">سال تولید</option>
+                </select>
+                &nbsp; &nbsp;<span class="fa fa-sort-alpha-desc"></span>
+            </div>
+            <section class="MoviesContainer">
+                <div class="MovieBox">
+                    <div class="MovieInformationContainer">
+                        <div class="MovieContent rtl">
+                            <h2 class="c-main">سریال Arrow</h2>
+                            <span><span class="c-white">ژانر: &nbsp;&nbsp;</span><span class="c-gray">ماجراجویی،
+                                    اکشن</span></span>
+                            <span><span class="c-white">کارگردان: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Brandon Miller Williams</span></span>
+                            <span><span class="c-white">بازیگران: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Stephen Amell, emilly bet, farid gahderi</span></span>
+                            <p class="rtl c-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از
+                                طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                                باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
+                                می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی
+                                و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام...</p>
+                        </div>
+                        <div class="MovieCover align-center"><img src="images/website/posts/series/arrow-poster.png"
+                                alt=""></div>
+                    </div>
+                    <div class="MovieAction">
+                        <a href="Movie2.html" class="c-main GoToMoviePageBtn align-center"><span
+                                class="fa fa-long-arrow-left">&nbsp;&nbsp;</span> ادامه و
+                            دانلود </a>
+                        <a href="#" class="c-main FavoritesBtn RemoveFromFavorites"><span
+                                class="fa fa-heart">&nbsp;&nbsp;</span>
+                            حذف از
+                            علاقه
+                            مندی
+                            ها </a>
+                        <a href="#" class="c-main  PlayTrailerBtn"><span class="fa fa-play">&nbsp;&nbsp;</span>مشاهده
+                            تریلر</a>
+                    </div>
+                    <div class="NetworkLogo">
+                        <img src="images/website/Network Logos/dc.png" alt="dc universe">
+                        <h6>DC Universe</h6>
+                    </div>
+                </div>
+                <div class="MovieBox MovieBox2">
+                    <div class="MovieInformationContainer">
+                        <div class="MovieContent rtl">
+                            <h2 class="c-main">فیلم Joker 2019</h2>
+                            <span><span class="c-white">ژانر: &nbsp;&nbsp;</span><span class="c-gray">ماجراجویی،
+                                    اکشن</span></span>
+                            <span><span class="c-white">کارگردان: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Brandon Miller Williams</span></span>
+                            <span><span class="c-white">بازیگران: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Stephen Amell, emilly bet, farid gahderi</span></span>
+                            <p class="rtl c-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از
+                                طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                                باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
+                                می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی
+                                و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام...</p>
+                        </div>
+                        <div class="MovieCover align-center"><img src="images/website/posts/movies/joker-poster.jpg"
+                                alt=""></div>
+                    </div>
+                    <div class="MovieAction">
+                        <a href="Movie2.html" class="c-main GoToMoviePageBtn align-center"><span
+                                class="fa fa-long-arrow-left">&nbsp;&nbsp;</span> ادامه و
+                            دانلود </a>
+                        <a href="#" class="c-main FavoritesBtn AddToFavoritesBtn"><span
+                                class="fa fa-heart">&nbsp;</span> افزودن به
+                            علاقه
+                            مندی
+                            ها </a>
+                        <a href="#" class="c-main PlayTrailerBtn"><span class="fa fa-play">&nbsp;</span>مشاهده تریلر</a>
+                    </div>
+                </div>
+                <div class="MovieBox MovieBox3">
+                    <div class="MovieInformationContainer">
+                        <div class="MovieContent rtl">
+                            <h2 class="c-main">سریال Money Heist</h2>
+                            <span><span class="c-white">ژانر: &nbsp;&nbsp;</span><span class="c-gray">ماجراجویی،
+                                    اکشن</span></span>
+                            <span><span class="c-white">کارگردان: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Brandon Miller Williams</span></span>
+                            <span><span class="c-white">بازیگران: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Stephen Amell, emilly bet, farid gahderi</span></span>
+                            <p class="rtl c-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از
+                                طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                                باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
+                                می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی
+                                و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام...</p>
+                        </div>
+                        <div class="MovieCover align-center"><img
+                                src="images/website/posts/series/moenyheist-poster.jpg" alt=""></div>
+                    </div>
+                    <div class="MovieAction">
+                        <a href="Movie2.html" class="c-main GoToMoviePageBtn align-center"><span
+                                class="fa fa-long-arrow-left">&nbsp;&nbsp;</span> ادامه و
+                            دانلود </a>
+                        <a href="#" class="c-main FavoritesBtn AddToFavoritesBtn"><span
+                                class="fa fa-heart">&nbsp;</span> افزودن به
+                            علاقه
+                            مندی
+                            ها </a>
+                        <a href="#" class="c-main PlayTrailerBtn"><span class="fa fa-play">&nbsp;</span>مشاهده تریلر</a>
+                    </div>
+                    <div class="NetworkLogo">
+                        <img src="images/website/Network Logos/netflix.png" alt="dc universe">
+                        <h6>NETFLIX</h6>
+                    </div>
+                </div>
+                <div class="MovieBox MovieBox4">
+                    <div class="MovieInformationContainer">
+                        <div class="MovieContent rtl">
+                            <h2 class="c-main">سریال Friends</h2>
+                            <span><span class="c-white">ژانر: &nbsp;&nbsp;</span><span class="c-gray">ماجراجویی،
+                                    اکشن</span></span>
+                            <span><span class="c-white">کارگردان: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Brandon Miller Williams</span></span>
+                            <span><span class="c-white">بازیگران: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Stephen Amell, emilly bet, farid gahderi</span></span>
+                            <p class="rtl c-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از
+                                طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                                باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
+                                می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی
+                                و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام...</p>
+                        </div>
+                        <div class="MovieCover align-center"><img src="images/website/posts/series/Friends-poster.jpg"
+                                alt=""></div>
+                    </div>
+                    <div class="MovieAction">
+                        <a href="Movie2.html" class="c-main GoToMoviePageBtn align-center"><span
+                                class="fa fa-long-arrow-left">&nbsp;&nbsp;</span> ادامه و
+                            دانلود </a>
+                        <a href="#" class="c-main FavoritesBtn AddToFavoritesBtn"><span
+                                class="fa fa-heart">&nbsp;</span> افزودن به
+                            علاقه
+                            مندی
+                            ها </a>
+                        <a href="#" class="c-main PlayTrailerBtn"><span class="fa fa-play">&nbsp;</span>مشاهده تریلر</a>
+                    </div>
+                    <div class="NetworkLogo">
+                        <img src="images/website/Network Logos/netflix.png" alt="dc universe">
+                        <h6>NETFLIX</h6>
+                    </div>
+                </div>
+                <div class="MovieBox MovieBox6">
+                    <div class="MovieInformationContainer">
+                        <div class="MovieContent rtl">
+                            <h2 class="c-main">سریال Game Of Thrones</h2>
+                            <span><span class="c-white">ژانر: &nbsp;&nbsp;</span><span class="c-gray">ماجراجویی،
+                                    اکشن</span></span>
+                            <span><span class="c-white">کارگردان: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Brandon Miller Williams</span></span>
+                            <span><span class="c-white">بازیگران: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Stephen Amell, emilly bet, farid gahderi</span></span>
+                            <p class="rtl c-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از
+                                طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                                باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
+                                می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی
+                                و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام...</p>
+                        </div>
+                        <div class="MovieCover align-center"><img src="images/website/posts/series/got-poster.jpg"
+                                alt=""></div>
+                    </div>
+                    <div class=" MovieAction">
+                        <a href="Movie2.html" class="c-main GoToMoviePageBtn align-center"><span
+                                class="fa fa-long-arrow-left">&nbsp;&nbsp;</span> ادامه و
+                            دانلود </a>
+                        <a href="#" class="c-main FavoritesBtn AddToFavoritesBtn"><span
+                                class="fa fa-heart">&nbsp;</span> افزودن به
+                            علاقه
+                            مندی
+                            ها </a>
+                        <a href="#" class="c-main PlayTrailerBtn"><span class="fa fa-play">&nbsp;</span>مشاهده
+                            تریلر</a>
+                    </div>
+                    <div class="NetworkLogo">
+                        <img src="images/website/Network Logos/hbo.png" alt="dc universe">
+                        <h6>HBO</h6>
+                    </div>
+                </div>
+                <div class="MovieBox MovieBox5">
+                    <div class="MovieInformationContainer">
+                        <div class="MovieContent rtl">
+                            <h2 class="c-main">سریال Mr.Robot</h2>
+                            <span><span class="c-white">ژانر: &nbsp;&nbsp;</span><span class="c-gray">ماجراجویی،
+                                    اکشن</span></span>
+                            <span><span class="c-white">کارگردان: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Brandon Miller Williams</span></span>
+                            <span><span class="c-white">بازیگران: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Stephen Amell, emilly bet, farid gahderi</span></span>
+                            <p class="rtl c-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از
+                                طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                است و
+                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                می
+                                باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان
+                                را
+                                می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+                                خلاقی
+                                و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام...</p>
+                        </div>
+                        <div class="MovieCover align-center"><img src="images/website/posts/series/Mrrobot-poster.jpg"
+                                alt=""></div>
+                    </div>
+                    <div class="MovieAction">
+                        <a href="Movie2.html" class="c-main GoToMoviePageBtn align-center"><span
+                                class="fa fa-long-arrow-left">&nbsp;&nbsp;</span> ادامه و
+                            دانلود </a>
+                        <a href="#" class="c-main FavoritesBtn AddToFavoritesBtn"><span
+                                class="fa fa-heart">&nbsp;</span> افزودن به
+                            علاقه
+                            مندی
+                            ها </a>
+                        <a href="#" class="c-main PlayTrailerBtn"><span class="fa fa-play">&nbsp;</span>مشاهده
+                            تریلر</a>
+                    </div>
+                    <div class="NetworkLogo">
+                        <img src="images/website/Network Logos/usanetwork.png" alt="dc universe">
+                        <h6>USA Network</h6>
+                    </div>
+                </div>
+                <div class="MovieBox MovieBox5">
+                    <div class="MovieInformationContainer">
+                        <div class="MovieContent rtl">
+                            <h2 class="c-main">سریال Mr.Robot</h2>
+                            <span><span class="c-white">ژانر: &nbsp;&nbsp;</span><span class="c-gray">ماجراجویی،
+                                    اکشن</span></span>
+                            <span><span class="c-white">کارگردان: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Brandon Miller Williams</span></span>
+                            <span><span class="c-white">بازیگران: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Stephen Amell, emilly bet, farid gahderi</span></span>
+                            <p class="rtl c-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از
+                                طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                است و
+                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                می
+                                باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان
+                                را
+                                می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+                                خلاقی
+                                و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام...</p>
+                        </div>
+                        <div class="MovieCover align-center"><img src="images/website/posts/series/Mrrobot-poster.jpg"
+                                alt=""></div>
+                    </div>
+                    <div class="MovieAction">
+                        <a href="Movie2.html" class="c-main GoToMoviePageBtn align-center"><span
+                                class="fa fa-long-arrow-left">&nbsp;&nbsp;</span> ادامه و
+                            دانلود </a>
+                        <a href="#" class="c-main FavoritesBtn AddToFavoritesBtn"><span
+                                class="fa fa-heart">&nbsp;</span> افزودن به
+                            علاقه
+                            مندی
+                            ها </a>
+                        <a href="#" class="c-main PlayTrailerBtn"><span class="fa fa-play">&nbsp;</span>مشاهده
+                            تریلر</a>
+                    </div>
+                    <div class="NetworkLogo">
+                        <img src="images/website/Network Logos/usanetwork.png" alt="dc universe">
+                        <h6>USA Network</h6>
+                    </div>
+                </div>
+                <div class="MovieBox MovieBox5">
+                    <div class="MovieInformationContainer">
+                        <div class="MovieContent rtl">
+                            <h2 class="c-main">سریال Mr.Robot</h2>
+                            <span><span class="c-white">ژانر: &nbsp;&nbsp;</span><span class="c-gray">ماجراجویی،
+                                    اکشن</span></span>
+                            <span><span class="c-white">کارگردان: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Brandon Miller Williams</span></span>
+                            <span><span class="c-white">بازیگران: &nbsp;&nbsp;</span><span class="c-gray">
+                                    Stephen Amell, emilly bet, farid gahderi</span></span>
+                            <p class="rtl c-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از
+                                طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                است و
+                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                می
+                                باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان
+                                را
+                                می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+                                خلاقی
+                                و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام...</p>
+                        </div>
+                        <div class="MovieCover align-center"><img src="images/website/posts/series/Mrrobot-poster.jpg"
+                                alt=""></div>
+                    </div>
+                    <div class="MovieAction">
+                        <a href="Movie2.html" class="c-main GoToMoviePageBtn align-center"><span
+                                class="fa fa-long-arrow-left">&nbsp;&nbsp;</span> ادامه و
+                            دانلود </a>
+                        <a href="#" class="c-main FavoritesBtn AddToFavoritesBtn"><span
+                                class="fa fa-heart">&nbsp;</span> افزودن به
+                            علاقه
+                            مندی
+                            ها </a>
+                        <a href="#" class="c-main PlayTrailerBtn"><span class="fa fa-play">&nbsp;</span>مشاهده
+                            تریلر</a>
+                    </div>
+                    <div class="NetworkLogo">
+                        <img src="images/website/Network Logos/usanetwork.png" alt="dc universe">
+                        <h6>USA Network</h6>
+                    </div>
+                </div>
+                <!-- This div contains trailer video -->
+            </section>
+            <a href="#" class="LoadMoreBtn align-center"> <span class="fa fa-arrow-down">&nbsp;</span>مشاهده بیشتر
+            </a>
+        </section>
+    </main>
+    <footer class="align-center rtl"><i class="fa fa-copyright">&nbsp;&nbsp;</i>تمام حقوق این وبسایت متعلق به فیلمورا
+        می‌باشد و هرگونه کپی برداری از آن پیگرد
+
+        قانونی دارد </footer>
+    <!-- This section contains Login/SignUp page -->
+    <section class="UserAccountActionContainer rtl">
+        <div>
+            <div class="SwitchAccountActionContainer">
+                <span>ورود</span>
+                <span>ثبت نام</span>
+                <div class="AccountPseudo"></div>
+            </div>
+            <form name="SignUpForm" class="HiddenForm SignUpForm" action="User.html">
+                <input type="email" placeholder="ایمیل">
+                <input type="text" placeholder="نام کاربری">
+                <input type="password" placeholder="رمز عبور">
+                <input type="password" placeholder="تکرار رمز عبور">
+                <input class="AccountFormButton" type="submit" value="ثبت نام">
+            </form>
+            <form name="SignInForm" class="SignInForm" action="User.html">
+                <input type="email" placeholder="نام کاربری یا ایمیل">
+                <input type="password" placeholder="رمز عبور">
+                <a href="#">رمز عبور خود را فراموش کرده اید؟</a>
+                <input class="AccountFormButton" type="submit" value="ورود به حساب">
+            </form>
+
+            <span class="CloseUserActionContainer fa fa-close"></span>
+        </div>
+    </section>
+    <!-- TrailerBox -->
+    <div class="TrailersVideos">
+        <i class="fa fa-close CloseTrailerButton"></i>
+        <video class="TrailerVideo" src="Movies/Trailers/trailer.mkv" height="100%" width="100%" controls></video>
+    </div>
+    <!-- overlay -->
+    <section class="PageOverlay">
+    </section>
+    <!-- refrence to JS files -->
+    <script src="JS/ui.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>

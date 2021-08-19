@@ -1,0 +1,2192 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "IranSans", sans-serif;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Importing Font faces */
+@font-face {
+  font-family: "IranSans";
+  src: url("../fonts/IRANSansWeb_Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IranSans";
+  src: url("../fonts/IRANSansWeb_Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IranSans";
+  src: url("../fonts/IRANSansWeb_Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Language Classes */
+.en {
+  font-family: "Roboto", sans-serif;
+}
+
+/* common stuff */
+body {
+  background-color: #080808;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-main {
+  color: #FCA311 !important;
+}
+
+.c-white {
+  color: #fff;
+}
+
+.c-gray {
+  color: #b1b1b1;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+
+
+
+.hide {
+  display: none !important;
+}
+
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+.PageOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.507);
+  z-index: 10;
+  text-align: center;
+}
+
+
+/* Header Properties */
+/* Header nav Properties */
+.Navbar {
+  background-color: #000000;
+  display: flex;
+  position: relative;
+}
+
+.FixedNavbar {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 2px 3px 0 gray;
+  z-index: 9;
+  top: 1%;
+  animation: FixNavbar .3s forwards;
+}
+
+@keyframes FixNavbar {
+  form {
+    top: .5%;
+    opacity: 0;
+  }
+
+  to {
+    top: 0%;
+    opacity: 1;
+  }
+}
+
+.LogoUl {
+  display: flex;
+  width: 40%;
+  justify-content: flex-start;
+}
+
+.Logo {
+  width: 48px;
+  height: 48px;
+}
+
+.LogoText {
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.UserBtn {
+  padding: 2px 10px;
+  color: black;
+  background-color: #FCA311;
+  border: 2px solid #FCA311;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-left: 20px;
+  transition: background-color .6s;
+}
+
+.LogOutBtn {
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-left: 20px;
+  color: whitesmoke;
+  background-color: rgb(233, 0, 0);
+  color: #000000;
+  transition: background-color .6s;
+}
+
+.LogOutBtn i {
+  transform: rotate(180deg);
+}
+
+.LogOutBtn:hover {
+  background-color: rgb(228, 54, 54);
+
+}
+
+.LogOutBtn:hover i {
+  animation: LogOut .5s forwards;
+}
+
+@keyframes LogOut {
+  from {
+    transform: rotate(180deg) translateX(0px);
+  }
+
+  to {
+    transform: rotate(180deg) translateX(5px);
+  }
+}
+
+.UserBtn:hover {
+  background-color: #ffb640;
+}
+
+.MenuBarItem {
+  color: white;
+  padding-right: 25px;
+  position: relative;
+  transition: color .6s;
+}
+
+.MenuSearchBtn {
+  cursor: pointer;
+}
+
+.MenuBarItem:hover {
+  color: #FCA311;
+}
+
+.MenuBarUl {
+  display: flex;
+  width: 60%;
+  justify-content: flex-end;
+}
+
+.ActiveItem {
+  color: #FCA311;
+}
+
+.SearchForm {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+@keyframes ShowSearchForm {
+  0% {
+    opacity: 0;
+    top: 0%;
+
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+    top: 100%;
+  }
+}
+
+.PopSearchForm {
+  display: flex !important;
+  animation: ShowSearchForm .5s;
+  animation-fill-mode: forwards;
+}
+
+
+.SearchForm input[type="text"] {
+  width: 70%;
+  padding: 10px 15px;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  outline: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.SearchBtn {
+  color: rgb(9, 161, 22);
+  background-color: transparent;
+  outline: 0;
+  transform: translateX(200%) scale(2);
+  border: 0;
+  cursor: pointer;
+}
+
+/* Header Cover Properties */
+.HeaderCover {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/website/icons/HeaderCover.jpg");
+  background-position: top;
+  background-size: cover;
+  border-bottom: 1px solid gray;
+}
+
+.HeaderCoverTitle {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 26px;
+  font-weight: 500
+}
+
+.HeaderCoverBtn {
+  color: #FCA311;
+  border: 1px solid #FCA311;
+  padding: 10px 15px;
+  width: 12%;
+  margin: 40px 0;
+  border-radius: 15px;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.HeaderCoverBtn span {
+  z-index: 3;
+}
+
+.HeaderCoverBtn:hover {
+  color: #000000;
+}
+
+.HeaderCoverBtn:hover::after {
+  transform: translateX(0);
+}
+
+.HeaderCoverBtn::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fca211;
+  z-index: 2;
+  transform: translateX(-100%);
+  transition: transform .3s;
+}
+
+
+/* Main Properties */
+/* Slider Properties */
+.NewsSlider {
+  margin: 50px 0 30px 0;
+  background-color: #080808;
+  padding: 25px 5px;
+  position: relative;
+}
+
+
+.SliderItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NewsActiveSlider {
+  height: 300px;
+  width: 38%;
+  position: relative;
+  box-shadow: 0 0 9px 0px grey;
+  z-index: 1;
+}
+
+.NewsActiveSlider::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.705), rgb(0, 0, 0));
+  z-index: 1;
+}
+
+.NewsInactiveSlider {
+  height: 250px;
+  width: 25%;
+  position: relative;
+}
+
+.NewsInactiveSlider::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.NewsActiveSlider img {
+  width: 100%;
+  height: 100%;
+}
+
+.NewsInactiveSlider img {
+  width: 100%;
+  height: 100%;
+}
+
+.NewsSliderContent {
+  position: absolute;
+  padding: 0px 2% 4% 2%;
+  height: calc(100% - 4%);
+  width: calc(100% - 4%);
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 2;
+
+}
+
+.NewsSliderContent div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.NewsSliderTitle {
+  color: #ffffff;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+
+.NewsSliderText {
+  color: rgb(250, 250, 250);
+  font-size: 12px;
+  text-align: justify;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.NewsSliderBtn {
+  color: #000000;
+  background-color: #FCA311;
+  padding: 4px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.NewsSliderDate {
+  color: rgb(138, 138, 138);
+}
+
+.NewsSliderArrowsDiv {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  padding: 0 1%;
+  width: calc(100% - 2%);
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.NewsSliderArrows {
+  font-size: 3rem;
+}
+
+.SliderSquaresDiv {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.SliderSquare {
+  margin-right: 5px;
+  background-color: #fff;
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
+}
+
+.ActiveSquare {
+  transition: background-color .5s;
+  background-color: #FCA311;
+}
+
+/* Latest Trailers */
+.LatestTrailers {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../Movies/Trailers/the-last-kingdom-s4.jpg ");
+  background-position: top;
+  background-size: cover;
+  padding: 30px 2%;
+  width: calc(100% - 4%);
+  overflow: hidden;
+
+}
+
+.LatestTrailers h3 {
+  text-align: right;
+}
+
+.Trailers {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  position: relative;
+}
+
+.TrailerSliderLeft {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: none;
+  z-index: -2;
+  transform: translateX(-120%);
+}
+
+.TrailerSliderRight {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transform: translateX(120%);
+}
+
+.TrailerBox {
+  position: relative;
+  width: 35%;
+  height: 290px;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px 1px white;
+}
+
+.TrailerBox img {
+  width: 100%;
+  height: 100%;
+}
+
+.TrailerContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.712);
+  flex-direction: column;
+}
+
+.PlayTrailerVideoBtn {
+  font-size: 4rem;
+  color: #FCA311;
+  margin-top: 5rem;
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 6;
+}
+
+.TrailerContent i:hover {
+  transform: scale(1.1);
+  color: #ffbb4f;
+}
+
+.TrailerContent h6 {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: right;
+  padding: 10px 5px;
+  text-align: center;
+  height: 15%;
+}
+
+.TrailerContent div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.TrailerContent div span {
+  padding: 0 2%;
+  color: #8d8d8d;
+}
+
+.TrailersVideos {
+  position: fixed;
+  width: 50%;
+  background-color: #00000088;
+  z-index: 11;
+  display: none;
+  text-align: center;
+  top: 30%;
+  left: 25%;
+}
+
+.TrailersVideos video {
+  height: 100%;
+  width: 100%;
+  outline: none;
+}
+
+.TrailersVideos i {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  color: red;
+  font-size: 35px;
+  cursor: pointer;
+  z-index: 15;
+}
+
+/* Popular Movies Properties */
+
+
+.MoviesBox {
+  width: 20%;
+  height: 280px;
+  margin: 20px 2%;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px #292929;
+  overflow: hidden;
+}
+
+.MoviesBox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.SeeMoreBtn {
+  background-color: #FCA311;
+  color: #000000;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-weight: bold;
+  box-shadow: 0 0 20px 5px rgba(252, 162, 17, 0.486);
+  border: 1px solid #000000;
+}
+
+.MoviesContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.MoviesContent h4 {
+  text-align: center;
+  color: rgb(230, 230, 230);
+  padding-right: 2%;
+  font-weight: normal;
+}
+
+.MoviesContentRating {
+  color: white;
+  padding-left: 4%;
+  font-size: 14px;
+
+}
+
+.MoviesContentRating i {
+  color: yellow;
+  padding-right: 1%;
+
+}
+
+.MoviesContent div {
+  display: flex;
+  padding: 0 2%;
+  align-items: center;
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+
+.MoviesContentGenere {
+  justify-content: flex-end !important;
+}
+
+.MoviesContentGenere span {
+  color: #8d8d8d;
+  font-size: 12px;
+  padding-left: 3%;
+}
+
+.MoviesContentAction {
+  z-index: 3;
+}
+
+.MoviesContentAction i {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.MoviesContentAction a {
+  background-color: #FCA311;
+  color: #000000;
+  padding: 4px 30px;
+  border-radius: 15px;
+  font-weight: bold;
+  border: 1px solid #000000;
+  font-size: 13px;
+  border: 1px solid #000000;
+  margin-right: 15px;
+  transition: background-color .5s;
+}
+
+.MoviesContentAction a:hover {
+  background-color: #ffbb4f;
+}
+
+.MovieStory {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.MovieStory p {
+  padding: 6%;
+  color: whitesmoke;
+  font-weight: 100;
+  font-size: 14px;
+  text-align: justify;
+}
+
+/* Filmora email props */
+.SubscribeContainer {
+  width: 100%;
+  margin: 6rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.SubscribeDiv {
+  border-top: 1px solid #777777;
+  border-bottom: 1px solid #777777;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/website/icons/subscribebg2.jpg ");
+  background-size: cover;
+  width: 80%;
+  padding: 80px 2%;
+}
+
+.SubscribeDiv h3 {
+  margin-top: 40px;
+  color: white;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.SubscribeDiv ul {
+  padding-right: 5%;
+  list-style-type: square;
+  color: #FCA311;
+}
+
+.SubscribeDiv ul li p {
+  color: rgb(202, 202, 202);
+}
+
+.SubscribeForm {
+  display: flex;
+  /* padding-left: 20%; */
+  padding-top: 30px;
+  justify-content: center;
+}
+
+.SubscribeFormEmail {
+  width: 40%;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.SubscribeFormSubmit {
+  background-color: #fca211;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  width: 25%;
+  color: #000000;
+  font-weight: bold;
+  border: 2px solid #000000;
+  transition: background-color .3s;
+}
+
+.SubscribeFormSubmit:hover {
+  background-color: #ffba4a;
+}
+
+/* Footer */
+footer {
+  background-color: #131313;
+  color: #FFF8F8;
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 300;
+  width: 100%;
+}
+
+/* Movies.html props */
+.GrayNavbar {
+  background-color: rgb(20, 20, 20);
+}
+
+/* Link to archive box props */
+
+
+
+
+/* Movies page sliders props */
+.MoviesPageslider {
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1f1f1e;
+  position: relative;
+  align-items: center;
+  padding: 50px 0;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.MoviesPagesliderAction {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  width: 100%;
+  position: relative;
+}
+
+.MoviesPagesliderAction a {
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.MoviesPagesliderAction div {
+  display: flex;
+}
+
+.MoviesPagesliderAction div h3 {
+  padding: 0px 25px 0px 10px;
+}
+
+.MoviesPagesliderAction div select {
+  font-weight: bold;
+  padding: 5px 20px;
+  outline: none;
+  border: 1px solid #FCA311;
+  background-color: #FCA311;
+  color: #000000;
+}
+
+.MoviesPagesliderAction div select option {
+  align-items: center;
+  background: #000000;
+  color: #FCA311;
+}
+
+.MoviesPageSliderItems {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.MovieShortStoryContainer {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  transition: transform .5s;
+  transform: translateY(105%);
+}
+
+.MovieShortStory {
+  text-align: justify;
+  font-size: 13px;
+  color: white;
+  font-weight: 300;
+  padding: 5px 2%;
+}
+
+.HiddenMoviesPageSlider {
+  position: absolute;
+  top: 27%;
+}
+
+.ActorsPos {
+  position: absolute !important;
+  top: 15% !important;
+}
+
+.MoviesPageSliderItemsRight {
+  transform: translateX(120%);
+  opacity: 0;
+}
+
+.MoviesPageSliderItemsLeft {
+  transform: translateX(-120%);
+  opacity: 0;
+}
+
+.MovieSliderRight {
+  animation: MovieSliderRight .5s forwards;
+}
+
+.MovieSliderLeft {
+  animation: MovieSliderLeft .5s forwards;
+}
+
+@keyframes MovieSliderLeft {
+  from {
+    transform: translateX(-90%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes MovieSliderRight {
+  from {
+    transform: translateX(90%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.UpdatedSerieTitle {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  background: rgba(163, 3, 3, 0.6);
+  color: white;
+  top: 0;
+  left: 0;
+}
+
+/* Movies List section props */
+.FilterSection {
+  margin: 80px 0 0 0;
+  background-color: #080808;
+  padding: 30px 15px;
+}
+
+.FilterSection h3 {
+  padding: 25px 0;
+}
+
+
+.FilterSection form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.FilterSection form select,
+.FilterSection form input[type="text"],
+.FilterSection form input[type="submit"] {
+  width: 15%;
+  padding: 8px 5px;
+  text-align: right;
+  outline: none;
+  margin-right: 10px;
+
+}
+
+.FilterSection form input[type="text"]::placeholder {
+  padding-right: 15px;
+}
+
+.FilterSection form input[type="submit"] {
+  background-color: rgb(15, 179, 0);
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color .5s, color .5s;
+}
+
+.FilterSection form input[type="submit"]:hover {
+  color: black;
+  background-color: rgb(65, 206, 52);
+}
+
+/* Movies Section */
+.MoviesSection {
+  background-color: #080808;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.SortMoviesDiv {
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.SortMoviesDiv::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 30%;
+  background-color: #77777796;
+  top: 130%;
+  left: 0%;
+  right: 1%;
+}
+
+.SortMoviesDiv select {
+  outline: none;
+  border: none;
+  padding: 3px;
+}
+
+.SortMoviesDiv span {
+  color: white;
+}
+
+.MoviesContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.MovieBox {
+  position: relative;
+  width: 80%;
+  margin-bottom: 50px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/website/posts/series/arrow-bg.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 0px #fff;
+}
+
+.MovieBox2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/website/posts/movies/joker-bg.jpg");
+}
+
+.MovieBox3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/website/posts/series/moenyheist-bg.jpeg");
+}
+
+.MovieBox4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/website/posts/series/friends-bg.jpg");
+}
+
+.MovieBox5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/website/posts/series/mrrobot-bg.jpg");
+}
+
+.MovieBox6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/website/posts/series/got-bg.jpg");
+}
+
+
+.MovieInformationContainer {
+  display: flex;
+  padding: 0 0 0 2%;
+}
+
+.MovieCover {
+  width: 35%;
+}
+
+.MovieCover img {
+  width: 70%;
+  height: 90%;
+  border-radius: 15px;
+}
+
+.MovieContent {
+  width: 65%;
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.MovieContent h2 {
+  justify-self: center;
+
+}
+
+.MovieContent p {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 15px;
+}
+
+.MovieAction {
+  width: calc(100% - 20px);
+  display: flex;
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+
+.MovieAction a {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15PX;
+  transition: all .5s;
+}
+
+.AddToFavoritesBtn {
+  background-color: #000000a2;
+  color: #e00000 !important;
+  border: 1px solid #e00000;
+}
+
+.AddToFavoritesBtn:hover {
+  color: #fff !important;
+  background-color: #e00000;
+}
+
+.RemoveFromFavorites {
+  color: #fff !important;
+  background-color: #e00000;
+  border: 1px solid #e00000;
+}
+
+.GoToMoviePageBtn {
+  background-color: #FCA311;
+  color: black !important;
+}
+
+.GoToMoviePageBtn:hover {
+  background-color: #ffb031;
+}
+
+.PlayTrailerBtn {
+  background-color: #000000a2;
+  color: #fca211 !important;
+  border: 1px solid #fca211;
+  transition: all .5s;
+}
+
+.PlayTrailerBtn:hover {
+  color: #000000 !important;
+  background-color: #fca211;
+}
+
+.NetworkLogo {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.541);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.NetworkLogo img {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.NetworkLogo h6 {
+  font-weight: 300;
+  padding-top: 5px;
+  color: white;
+}
+
+.LoadMoreBtn {
+  background-color: #fca211;
+  padding: 9px 10px;
+  font-weight: bold;
+  color: #000000;
+  width: 19%;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 2px solid #000;
+  box-shadow: 0 0 20px 5px #fca211;
+  position: relative;
+  left: 40%;
+  transition: box-shadow .5s;
+}
+
+.LoadMoreBtn:hover {
+  box-shadow: 0 0 10px 2px #fca211;
+}
+
+/* Movie Page props */
+.MovieDetailsContainer {
+  height: 45vmax;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/website/posts/series/friends-bg.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.MovieDetailsDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.MovieDetailsDiv div {
+  padding: 2% 0;
+}
+
+.MoviePoster {
+  width: 35%;
+}
+
+.MoviePoster img {
+  max-height: 85%;
+  max-width: 95%;
+  border-radius: 15px;
+}
+
+.MovieInfoContainer {
+  width: 45%;
+}
+
+.MovieInfoContainer h4 {
+  padding: 1.5% 0;
+}
+
+.MovieGalleryContainer {
+  display: flex;
+  align-items: center;
+}
+
+
+.GalleryContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4%);
+  display: none;
+  flex-direction: column;
+  padding: 50px 2%;
+  background-color: #000000;
+  z-index: 50;
+  height: 100%;
+  overflow-y: scroll;
+
+}
+
+.CloseGallery {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  color: red;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.GalleryContainer img {
+  border-radius: 10px;
+}
+
+.GalleryContainer div {
+  width: 100%;
+}
+
+.MainGalleryImageContainer {
+  text-align: center;
+  position: relative;
+}
+
+.MainGalleryImageContainer a {
+  position: absolute;
+  top: 88%;
+  left: 12%;
+  padding: 5px 15px;
+  background-color: #fca211;
+  color: #000;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  transition: background-color .5s;
+}
+
+.MainGalleryImageContainer a:hover {
+  background-color: #ffb134;
+}
+
+.MainGalleryImageContainer img {
+  width: 80%;
+  height: 450px;
+}
+
+.SubGalleryImagesContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.SubGalleryImagesContainer img {
+  width: 30%;
+  margin-top: 25px;
+  height: 250px;
+
+
+}
+
+@keyframes repalceImage {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.MovieGalleryContainer a {
+  padding: 4px 15px;
+  width: 15%;
+  color: #fca211;
+  border: 2px solid #fca211;
+  background-color: #00000093;
+  margin-right: 15px;
+}
+
+.RatingStarContainer span {
+  font-weight: 300;
+  font-size: 18px;
+  padding-left: 3%;
+}
+
+.RatingStarContainer i {
+  color: rgb(212, 212, 212);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+
+.MovieRatings {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.MovieRatings h1 {
+  font-size: 40px;
+}
+
+.MovieRatings h2 {
+  color: #ace709;
+  font-size: 20px;
+}
+
+.MovieRatings h4 {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+
+.MovieRatings span {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* Movie main props */
+main {
+  background-color: #080808;
+}
+
+.StoryLine {
+  padding: 25px 0;
+}
+
+.StoryLine h3 {
+  padding-right: 2%;
+}
+
+.StoryLine p {
+  padding: 10px 2%;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffffb9;
+}
+
+.AwardsContainer {
+  padding: 20px 2%;
+  width: calc(100% - 4%);
+}
+
+.AwardsContainer p {
+  color: #cacaca;
+  font-size: 15px;
+  font-weight: 300;
+  padding-right: 2%;
+}
+
+.ActorsContainer {
+  background-color: #131313;
+  padding: 25px 0;
+}
+
+.ActorsContainer>h3 {
+  padding: 0 1%;
+  position: relative;
+  align-self: flex-start;
+  margin-right: 1%;
+}
+
+.ActorsContainer>h3::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 99%;
+  width: 3px;
+  height: 100%;
+  background-color: #fca211;
+}
+
+
+.Actors {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100% !important;
+}
+
+.ActorBox {
+  height: 350px;
+  width: 20%;
+  border-radius: 20px;
+  background-color: rgb(218, 218, 218);
+}
+
+.ActorBox img {
+  width: 100%;
+  height: 80%;
+  border-radius: 20px 20px 0px 0;
+}
+
+.ActorInfo {
+  flex-direction: column;
+}
+
+.ActorInfo h4 {
+  color: #777777;
+}
+
+.DownloadBoxContainer {
+  padding: 30px 0;
+}
+
+.DownloadBoxContainer>h3 {
+  padding: 0 2%;
+  position: relative;
+}
+
+.DownloadBoxContainer>span {
+  padding: 0 3%;
+}
+
+.DownloadBoxContainer>h3::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 99%;
+  width: 3px;
+  height: 100%;
+  background-color: #fca211;
+}
+
+.DownloadBoxContainer div a {
+  padding: 5px 10px;
+  width: 20%;
+  border-radius: 10px;
+}
+
+.DownloadLinksContainer {
+  display: flex;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.DownloadLinksContainer a {
+  margin: 20px 15px 0 0;
+  color: black;
+  background-color: #fca211;
+  transition: all .5s;
+
+}
+
+.DownloadLinksContainer a:hover {
+  background-color: #ffb031;
+}
+
+.DownloadLinksContainer a span {
+  font-size: 12px;
+  color: #535353;
+}
+
+.MovieSubContainer a {
+  background-color: rgb(5, 209, 5);
+  color: #000;
+  transition: all .5s;
+}
+
+.MovieSubContainer a:hover {
+  background-color: rgb(27, 240, 27);
+  color: #000;
+}
+
+.SeriesDlLinksConatianer {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: calc(100% - 4%);
+  max-height: calc(100vh - 100px);
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 10;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 50px 2%;
+  z-index: 10;
+}
+
+.SeriesDlLinksConatianer h4 {
+  font-size: 20px;
+  padding: 15px 0;
+  text-align: center;
+
+}
+
+.SeriesDlLinkBox {
+  display: flex;
+  padding: 20px 2%;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc(100% - 4%);
+  position: relative;
+
+}
+
+.SeriesDlLinkBox::after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 20%;
+  right: 20%;
+  width: 60%;
+  height: 1px;
+  background-color: #a7a7a79f;
+
+}
+
+.SeriesDlLinkBox a {
+  width: 13%;
+  padding: 5px 7px;
+  color: #000000;
+  border: 2px solid #000000;
+  margin: 5px 5px 0 0;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 5px;
+  background-color: #fdb43f;
+  transition: background-color .5s;
+}
+
+.SeriesDlLinkBox a:hover {
+  background-color: #fdfa37;
+}
+
+.SerieSubtitle {
+  background-color: #24e60a !important;
+  border: 2px solid rgb(42, 211, 20) !important;
+  font-weight: bold !important;
+  transition: background-color .5s;
+}
+
+.SerieSubtitle:hover {
+  background-color: #5aff44 !important;
+}
+
+.CloseLinksPageBtn {
+  color: #e70909;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+
+/* Comment section props */
+.CommentsConatiner {
+  background-color: #1A1A1A;
+  padding: 25px 0;
+}
+
+.CommentsConatiner>h3 {
+  padding: 25px 2% 50px 0;
+}
+
+.CommentsConatiner>h3>span {
+  font-size: 25px;
+}
+
+.CommentsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CommentBox {
+  background-color: #202020;
+  margin-top: 20px;
+  padding: 20px 3%;
+  width: calc(90% - 6%);
+  border: 1px solid #535353;
+  border-radius: 40px;
+  display: flex;
+  position: relative;
+}
+
+.CommentBox img {
+  border-radius: 50px;
+  width: 96px;
+  height: 96px;
+  margin-left: 15px;
+}
+
+.CommentAction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.CommentAction h4 {
+  color: #d6d6d6;
+}
+
+.CommentAction p {
+  font-weight: 300;
+  color: #b1b1b1;
+  text-align: justify;
+  font-size: 15px;
+}
+
+.ReplyToCommentBtn {
+  padding: 5px;
+  cursor: pointer;
+  font-size: 25PX;
+  width: fit-content;
+  transform: rotateY(180deg);
+  align-self: flex-end;
+}
+
+.RepliedComment {
+  width: calc(80% - 6%);
+  background-color: #242424;
+  margin-top: 10px;
+}
+
+.ReplyForm {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 90%;
+  display: none;
+  top: 72%;
+}
+
+@keyframes ShowForm {
+  from {
+    opacity: 0;
+    top: 0%;
+  }
+
+  top {
+    opacity: 1;
+    top: 72%;
+  }
+}
+
+@keyframes HideForm {
+  0% {
+    top: 72%;
+    opacity: 1;
+  }
+
+
+  100% {
+    top: 30%;
+    opacity: 0;
+    display: none;
+  }
+}
+
+.CommentConfirmContainer {
+  position: fixed;
+  top: 90%;
+  padding: 10px 5%;
+  background-color: #58ff49;
+  display: none;
+  left: 25%;
+}
+
+@keyframes ShowConfirm {
+  from {
+    opacity: 1;
+    display: block;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.ReplyForm>input[type="text"] {
+  width: 90%;
+  padding: 6px 15px 6px 10%;
+  border-radius: 25px;
+  outline: none;
+  background-color: #202020;
+  border: 1px solid #535353;
+  color: #8d8d8d;
+}
+
+.ReplyForm button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.SendReplyBtn {
+  transform: rotate(-90deg) translateY(150%);
+  color: rgb(9, 163, 9);
+}
+
+.CloseReply {
+  transform: translate(245%, 8%);
+  color: red !important
+}
+
+.ShowMoreCommentsBtn {
+  color: #fca211;
+  background-color: transparent;
+  border: 1px solid #fca211;
+  padding: 5px 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px 1px #fca211;
+  border-radius: 5px;
+  width: 20%;
+  margin: 30px 35%;
+  transition: all .3s;
+}
+
+.ShowMoreCommentsBtn:hover {
+  box-shadow: 0 0 5px 1px #fca211;
+}
+
+.PostCommentsSection {
+  padding: 50px 3%;
+}
+
+.CommentForm {
+  display: flex;
+  align-items: flex-end;
+}
+
+.CommentForm textarea {
+  height: 200px;
+  width: 40%;
+  max-width: 60%;
+  max-height: 300px;
+  padding: 1%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.CommentForm input[type="submit"] {
+  margin-right: 5%;
+  padding: 5px 25px;
+  width: 12%;
+  background-color: #38eb20;
+  outline: none;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.CommentForm input[type="submit"]:hover {
+  background-color: #62ff4e;
+  transform: scale(1.1);
+}
+
+/* User sign in sign up section */
+.UserAccountActionContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+@keyframes ShowLoginForm {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes HideLoginForm {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
+
+.UserAccountActionContainer>div {
+  width: 50%;
+  background-color: #1F1F1F;
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.603);
+  padding: 80px 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.SwitchAccountActionContainer {
+  background-color: #fff;
+  width: 25%;
+  padding: 5px 1%;
+  border-radius: 5px;
+  display: flex;
+  position: relative;
+}
+
+
+
+.AccountPseudo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background-color: #fca211;
+  border-radius: 0 5px 5px 0;
+  transform: translateX(100%);
+  transition: transform .5s;
+}
+
+.SwitchAccountActionContainer span {
+  text-align: center;
+  width: 50%;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.HiddenForm {
+  display: none !important;
+}
+
+.UserAccountActionContainer>div form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 50px 0 25px 0;
+  align-items: center;
+}
+
+.AccountFormButton {
+  transition: background-color .5s;
+}
+
+.AccountFormButton:hover {
+  background-color: #ffb237 !important;
+}
+
+.UserAccountActionContainer>div form input {
+  width: 50%;
+  padding: 8px 15px 8px 3%;
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #000000;
+  outline: none;
+  border-radius: 10px;
+  color: #e0e0e0;
+}
+
+.UserAccountActionContainer>div form input::placeholder {
+  color: #d1d1d1;
+}
+
+.UserAccountActionContainer>div form a {
+  color: #B4B4B4;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-right: 25%;
+  align-self: baseline;
+}
+
+.UserAccountActionContainer>div form input[type="submit"] {
+  background-color: #FCA311;
+  color: #000000;
+  width: 25%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px solid #000000;
+}
+
+.UserAccountActionContainer>div>span {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  color: red;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+/* User panel Page Props */
+.UserPanelContainer {
+  display: flex;
+  min-height: 100vh;
+}
+
+.UserPanelMenuBar {
+  width: 15%;
+  padding: 25px 0;
+  border-left: 1px solid rgba(128, 128, 128, 0.568);
+  background-color: #111111;
+}
+
+.UserDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.UserDetailsContainer img {
+  width: 90px;
+  border-radius: 75px;
+  height: 90px;
+  border: 2px solid #fca211;
+}
+
+.UserDetailsContainer h5 {
+  color: #adadad;
+  padding-top: 5px;
+}
+
+.UserPanelMenuBar ul {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.UserPanelMenuBar ul li {
+  padding: 10px 15px;
+  width: calc(100% - 30px);
+  display: flex;
+  justify-content: baseline;
+  border-top: 1px solid rgba(83, 83, 83, 0.548);
+}
+
+.UserPanelMenuBar ul li a {
+  color: rgb(175, 175, 175);
+  width: 100%;
+}
+
+.UserPanelMenuBar ul li a i {
+  width: 25%;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(219, 219, 219);
+}
+
+.UserAccountTab {
+  padding: 40px 20px;
+  width: calc(85% - 40px);
+  display: none;
+}
+
+.UserAccountTab h3 {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.UserAccountTab h3::after {
+  position: absolute;
+  content: '';
+  top: 140%;
+  right: 0%;
+  width: 30%;
+  height: 1px;
+  background-color: #b1b1b177;
+}
+
+.UserAccountForm {
+  padding-right: 30px;
+}
+
+.UserAccountForm input {
+  width: 25%;
+  padding: 6px 15px 6px 30px;
+  background-color: rgba(54, 54, 54, 0.342);
+  border: 1px solid #000000;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: #a0a0a0;
+  outline: none;
+}
+
+.UserAccountForm div {
+  display: flex;
+  align-items: center;
+}
+
+.UserAccountForm div i {
+  color: #a0a0a0;
+  transform: translate(180%, 30%);
+}
+
+.FileDiv {
+  position: relative;
+  width: 20%;
+  padding: 0px 0px 0px 0px;
+  background-color: rgba(239, 243, 14, 0.795);
+  border: 1px solid #000000;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: #000000;
+  outline: none;
+  height: 35px;
+}
+
+
+.FileDiv span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 8;
+  font-size: 14px;
+}
+
+.FileDiv input {
+  opacity: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.UserAccountForm input[type="submit"] {
+  background-color: #38eb20;
+  color: #000000;
+  width: 15%;
+  padding: 5px 10px;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.FavoritesTab {
+  width: calc(100% - 8%);
+  padding: 50px 4%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: none;
+}
+
+.FavoritesItem {
+  width: 20%;
+  height: 250px;
+  position: relative;
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+
+.FavoritesItem img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.FavoritesItem div {
+  position: absolute;
+  padding: 25px 2%;
+  top: 0;
+  height: calc(100% - 50px);
+  width: calc(100% - 4%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  border-radius: 15px;
+}
+
+.FavoritesItem div h4 {
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 0 #000000;
+}
+
+.FavoritesItem div a {
+  color: white;
+  background-color: rgb(172, 0, 0);
+  width: 50%;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.FilmoraNewsletter {
+  padding: 50px 3%;
+
+}
+
+.FilmoraNewsletter h4 {
+  color: white;
+  padding-bottom: 40px;
+}
+
+
+.FilmoraNewsletter form label {
+  padding-right: 20px;
+  color: #8b8b8b;
+}
+
+.FilmoraNewsletter form input[type="submit"] {
+  margin-top: 30px;
+  margin-right: 5%;
+  padding: 3px 10px;
+  background-color: #38eb20;
+  color: #000000;
+  outline: none;
+  border: navajowhite;
+  border-radius: 5px;
+}
+
+.FormDivider {
+  margin: 30px 25%;
+  height: 2px;
+  background-color: #535353;
+  width: 50%;
+}
+
+.LeaveNewsLetter {
+  background-color: #ee2c2c !important;
+}
