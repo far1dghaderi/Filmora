@@ -1,5 +1,5 @@
 #Filmora
 
-Just a simple front-end Movie/Series downloading/blog website template
+Just a simple front-end template of Movie/Series downloading/blog website 
 
 **It's not responsive**
